@@ -1,0 +1,54 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/violetprotocol
+notes: >-
+  First-party client libraries and on-chain toolkits published by Violet
+  Protocol under the @violetprotocol npm scope. Violet integration is
+  SDK + smart-contract based (Ethereum Access Tokens and the VioletID
+  Registry), so these packages are the primary developer surface rather
+  than a REST client.
+packages:
+  - language: typescript
+    registry: npm
+    name: "@violetprotocol/sdk"
+    url: https://www.npmjs.com/package/@violetprotocol/sdk
+    install: npm install @violetprotocol/sdk
+    version: 0.0.35
+    official: true
+    description: Core Violet SDK for integrating Violet compliance and identity flows.
+    source: https://github.com/violetprotocol/violet-sdk
+  - language: typescript
+    registry: npm
+    name: "@violetprotocol/sdk-thirdweb"
+    url: https://www.npmjs.com/package/@violetprotocol/sdk-thirdweb
+    install: npm install @violetprotocol/sdk-thirdweb
+    official: true
+    description: Violet SDK bindings for the thirdweb wallet/connect stack.
+    source: https://github.com/violetprotocol/violet-sdk
+  - language: typescript
+    registry: npm
+    name: "@violetprotocol/sdk-web3-react"
+    url: https://www.npmjs.com/package/@violetprotocol/sdk-web3-react
+    install: npm install @violetprotocol/sdk-web3-react
+    official: true
+    description: Violet SDK bindings for the web3-react wallet connection library.
+    source: https://github.com/violetprotocol/violet-sdk
+  - language: typescript
+    registry: npm
+    name: "@violetprotocol/ethereum-access-token-helpers"
+    url: https://www.npmjs.com/package/@violetprotocol/ethereum-access-token-helpers
+    install: npm install @violetprotocol/ethereum-access-token-helpers
+    version: 0.2.0
+    license: MIT
+    official: true
+    description: TypeScript bindings and utilities for building and verifying Ethereum Access Tokens (EATs).
+    source: https://github.com/violetprotocol/ethereum-access-token
+  - language: solidity
+    registry: npm
+    name: "@violetprotocol/ethereum-access-token"
+    url: https://www.npmjs.com/package/@violetprotocol/ethereum-access-token
+    install: npm install @violetprotocol/ethereum-access-token
+    version: 0.3.2
+    official: true
+    description: Smart contracts for on-chain token-based access (EAT verifier / EIP-712 access tokens).
+    source: https://github.com/violetprotocol/ethereum-access-token

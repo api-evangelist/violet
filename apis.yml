@@ -1,8 +1,30 @@
 aid: violet
-name: violet
-description: violet is a company surfaced as a portfolio company of balderton-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Violet
+description: >-
+  Violet Protocol provides privacy-preserving, reusable on-chain compliance and
+  identity infrastructure for decentralized finance (DeFi). Its products —
+  VioletID, Full AML/KYC screening, GeoFencing, and Sybil resistance — let
+  crypto businesses meet regulatory requirements such as anti-money-laundering,
+  sanctions screening, geo-blocking, accredited-investor verification, and proof
+  of unique personhood. Integration is SDK and smart-contract based: Violet
+  issues Ethereum Access Tokens (EATs) — OAuth 2.0-compliant, EIP-712-signed
+  compliance assertions that carry no PII — and maintains the on-chain VioletID
+  Registry that maps wallet addresses to verified compliance statuses, all built
+  on W3C Decentralized Identifier and Verifiable Credential standards.
 url: https://raw.githubusercontent.com/api-evangelist/violet/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.violet.co/og-image.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +33,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Compliance
+- Identity
+- DeFi
+- Blockchain
+- KYC
+- AML
+- Web3
+- Decentralized Identity
+- Sanctions Screening
+- OAuth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +53,40 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/violet-domain-security.yml
 - type: Website
   url: https://www.violet.co/
+- type: Documentation
+  url: https://docs.violet.co
+- type: Portal
+  url: https://app.violet.co
+- type: GettingStarted
+  url: https://docs.violet.co/general-introduction/getting-started
+- type: APIReference
+  url: https://docs.violet.co/integration-walkthrough/introduction
+- type: GitHubOrganization
+  url: https://github.com/violetprotocol
+- type: Support
+  url: https://discord.com/invite/hRJpPQtKSh
+- type: SignUp
+  url: https://app.violet.co
+- type: TermsOfService
+  url: https://www.violet.co/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.violet.co/privacy-notice
+- type: Packages
+  url: packages/violet-packages.yml
+- type: SDKs
+  url: packages/violet-packages.yml
+- type: LLMsTxt
+  url: llms/violet-llms.txt
+- type: Conformance
+  url: conformance/violet-conformance.yml
+- type: Authentication
+  url: authentication/violet-authentication.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

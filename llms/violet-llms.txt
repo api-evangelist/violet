@@ -1,0 +1,29 @@
+# Violet Docs
+
+## Violet Docs
+
+- [About Violet](https://docs.violet.co/general-introduction/about-violet.md): Privacy protecting, reusable on-chain compliance
+- [Getting Started](https://docs.violet.co/general-introduction/getting-started.md)
+- [Violet Identity Compliance](https://docs.violet.co/general-introduction/violet-identity-compliance.md): High-level overview
+- [How to work with us](https://docs.violet.co/general-introduction/how-to-work-with-us.md): Contact details
+- [Frequently asked questions (FAQ)](https://docs.violet.co/general-introduction/frequently-asked-questions-faq.md)
+- [Core Concepts](https://docs.violet.co/for-developers/core-concepts.md): Core concepts used throughout Violet systems
+- [Ethereum Access Token](https://docs.violet.co/for-developers/core-concepts/ethereum-access-token.md)
+- [VioletID Registry](https://docs.violet.co/for-developers/core-concepts/violetid-registry.md)
+- [VioletID Registry vs. EAT Flow](https://docs.violet.co/for-developers/core-concepts/violetid-registry-vs.-eat-flow.md): Comparison of the different approaches available to integrate Violet in your onchain application
+- [Quick Start Guides](https://docs.violet.co/for-developers/quick-start-guides.md): Step by step guide for integrating Violet
+- [EAT Integration: Smart Contract](https://docs.violet.co/for-developers/quick-start-guides/eat-integration-smart-contract.md)
+- [EAT Integration: Frontend](https://docs.violet.co/for-developers/quick-start-guides/eat-integration-frontend.md)
+- [EAT Integration: Full code example](https://docs.violet.co/for-developers/quick-start-guides/eat-integration-full-code-example.md): This examples highlights how a fictional on-chain application can be made compliant using Violet and Ethereum Access Tokens
+- [Violet ID Registry](https://docs.violet.co/for-developers/quick-start-guides/violet-id-registry.md)
+- [Data Storage](https://docs.violet.co/for-developers/data-storage.md)
+- [Data Processing](https://docs.violet.co/for-developers/data-processing.md): Data flows in Violet compliance infrastructure
+- [Enrollment](https://docs.violet.co/for-developers/data-processing/enrollment.md): An enrollment takes place when a user enrolls a VioletID the first time a user want to perform a compliant on-chain transaction that requires a Violet credential.
+- [Transaction Authorization](https://docs.violet.co/for-developers/data-processing/transaction-authorization.md): A transaction authorization takes place every time a user want to perform a compliant on-chain transaction that requires a Violet credential.
+- [Daily Sanction List Checks](https://docs.violet.co/for-developers/data-processing/daily-sanction-list-checks.md): Violet checks every day if any holder of a VioletID got listed on a US relevant section list.
+- [Login Self-Service Portal](https://docs.violet.co/for-developers/data-processing/login-self-service-portal.md): This login process takes place when a holder of a VioletID want to see or change his own data in the our Self-Service Portal.
+- [Subpoena](https://docs.violet.co/for-developers/data-processing/subpoena.md): The subpoena process takes place if Violet receives a subpoena  from a court, regulatory body or regulated financial institution under Violet compliance
+- [Deployment Addresses](https://docs.violet.co/for-developers/deployment-addresses.md)
+- [Introduction](https://docs.violet.co/integration-walkthrough/introduction.md): An in-depth integration guide for leveraging Violet compliance & identity rails and a system architecture overview.
+- [Integrating using the VioletID Registry](https://docs.violet.co/integration-walkthrough/integrating-using-the-violetid-registry.md)
+- [Integrating using Ethereum Access Tokens (EATs)](https://docs.violet.co/integration-walkthrough/integrating-using-ethereum-access-tokens-eats.md)

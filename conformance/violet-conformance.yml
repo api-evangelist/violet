@@ -1,0 +1,57 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.violet.co/for-developers/core-concepts
+notes: >-
+  Cross-cutting technical standards Violet Protocol's compliance/identity
+  rails conform to, per the developer documentation. Violet issues Ethereum
+  Access Tokens (EATs) as OAuth 2.0-compliant access tokens and anchors
+  identity via W3C DID/Verifiable Credentials and Ethereum token standards.
+  This asserts technical-standard conformance only; it is not a published
+  audit certification (no SOC 2 / ISO 27001 program was found), so no
+  Compliance pointer is emitted.
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: >-
+      Docs state Ethereum Access Tokens are "fully OAuth 2.0 compliant" access
+      tokens; the specification does not mandate a JWT token format.
+    source: https://docs.violet.co/for-developers/core-concepts/ethereum-access-token
+  - id: oidc
+    conforms: true
+    evidence: >-
+      The ethereum-access-token project is described as "Solidity-based OIDC
+      for generating, issuing and verifying access tokens for smart contracts".
+    source: https://github.com/violetprotocol/ethereum-access-token
+  - id: eip-712
+    conforms: true
+    evidence: >-
+      EATs are signed messages that comply with EIP-712 (typed structured data
+      hashing and signing).
+    source: https://eips.ethereum.org/EIPS/eip-712
+  - id: w3c-did
+    conforms: true
+    evidence: >-
+      Identities are modeled with W3C Decentralized Identifiers (DID-core) as a
+      core concept.
+    source: https://www.w3.org/TR/did-core/
+  - id: w3c-verifiable-credentials
+    conforms: true
+    evidence: >-
+      "Violet stores all information about users in the form of Verifiable
+      Credentials" per the W3C VC data model.
+    source: https://www.w3.org/TR/vc-data-model/
+  - id: eip-721
+    conforms: true
+    evidence: >-
+      HumanboundToken is an ERC-721 representation of off-chain unique
+      humanhood used within the identity system.
+    source: https://github.com/violetprotocol/HumanboundToken
+  - id: eip-1238
+    conforms: true
+    evidence: >-
+      Violet publishes an EIP-1238 implementation for non-transferable
+      (soulbound) tokens used in on-chain identity/credential representation.
+    source: https://github.com/violetprotocol/ERC1238-token
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No REST/HTTP error surface; integration is SDK + on-chain contract based.

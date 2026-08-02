@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.violet.co/for-developers/core-concepts/ethereum-access-token
+docs: https://docs.violet.co/for-developers/core-concepts
+notes: >-
+  Violet has no traditional REST API with a securitySchemes block; its auth
+  model is an OAuth 2.0-compliant authorization flow that mints Ethereum
+  Access Tokens (EATs) plus on-chain verification against the VioletID
+  Registry. This profile is captured from the developer documentation
+  rather than derived from an OpenAPI spec.
+summary:
+  types: [oauth2, onchain-registry]
+  token_format: EAT (EIP-712 signed message, OAuth 2.0 compliant, not JWT)
+  oauth2_flows: [authorizationCode]
+schemes:
+  - name: EthereumAccessToken
+    type: oauth2
+    flow: authorizationCode
+    token_format: EIP-712 signed message
+    description: >-
+      An Ethereum Access Token is a signed compliance assertion issued by the
+      Violet system (off-chain) and verified by the Violet Verifier smart
+      contract (on-chain). It carries no direct PII; it only attests that a
+      wallet address has enrolled and satisfies the compliance requirements of
+      the integrating dApp. EATs are fully OAuth 2.0 compliant.
+    verifier_contract: "0xe8F42626ba40be4478B4B13566E9B26faff33663"  # AccessTokenVerifier, Ethereum Mainnet
+    source: https://docs.violet.co/for-developers/core-concepts/ethereum-access-token
+  - name: VioletIDRegistry
+    type: onchain-registry
+    description: >-
+      An on-chain registry mapping a wallet address to compliance statuses.
+      Any integrating dApp can query compliance status directly on-chain
+      without a round-trip to Violet; only Violet can modify entries. Used as
+      an alternative integration path to the EAT flow.
+    registry_contract: "0xfFcDa323597A90af8F7A0eCBE4ef14e9b30e4a9e"  # VioletID, Ethereum Mainnet
+    source: https://docs.violet.co/for-developers/core-concepts/violetid-registry
